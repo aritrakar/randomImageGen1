@@ -7,8 +7,7 @@ import os
 import requests
 import random
 
-# os.environ["OPENAI_API_KEY"]
-openai.api_key = "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"
+openai.api_key = os.environ["OPENAI_API_KEY"]
 prompt = "generate a random prompt for an ai-generated art piece"
 model = "text-davinci-003"
 n = 4
